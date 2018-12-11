@@ -25,8 +25,8 @@ class App < Sinatra::Base
   	@n1 = params[:number1].to_i
   	@n2 = params[:number2].to_i
   	case params[:operation]
-	  	when "substract"
-	  		@r = @n2 - @n1
+	  	when "subtract"
+	  		@r = @n1 - @n2
 	  	when "add"
 	  		@r = @n1 + @n2
 	  	when "multiply"
